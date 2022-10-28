@@ -6,14 +6,14 @@ import "./style/showcase.css";
 import { Link } from "react-router-dom";
 import { useParams } from "react-router-dom";
 
-const Showcase = ({ type }) => {
+const Showcase = ({ content }) => {
   let [movies, setMovies] = useState([]);
   let [movie, setMovie] = useState([]);
-  let { id } = useParams();
+  let { id, type } = useParams();
 
   const movieHeaderReq = () => {
     axios
-      .get(apiConfig.baseUrl + `${type}`)
+      .get(apiConfig.baseUrl + `${content}`)
       .then((res) => {
         setMovies(res.data.results);
       })
@@ -29,10 +29,6 @@ const Showcase = ({ type }) => {
   useEffect(() => {
     setMovie(movies[Math.floor(Math.random() * movies.length)]);
   }, [movies]);
-
-  // useEffect(() => {
-  //   console.log(movie);
-  // }, [movie]);
 
   if (movie) {
     return (
@@ -63,7 +59,9 @@ const Showcase = ({ type }) => {
               </button>
               {movie.id ? (
                 <Link
-                  to={`/info/${movie.id}`}
+                  to={`/info/${
+                    content.includes("tv") ? (type = "tv") : (type = "movie")
+                  }/${movie.id}`}
                   className="showcase-btn-child border w-25 bg-transparent text-white fw-bold border-white py-2 px-5 mx-2"
                 >
                   More info

@@ -6,7 +6,7 @@ import Showcase from "../components/UI/main/showcase/showcase";
 const HomePage = () => {
   return (
     <div>
-      <Showcase type={reqType.reqPopular} />
+      <Showcase content={reqType.reqPopular} />
       <Sliders
         title="Popular"
         fetchUrl={reqType.reqPopular}

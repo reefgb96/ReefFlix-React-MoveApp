@@ -6,7 +6,7 @@ import Showcase from "../components/UI/main/showcase/showcase";
 const TvShowsPage = () => {
   return (
     <div>
-      <Showcase type={reqType.reqTvPopular} />
+      <Showcase content={reqType.reqTvPopular} />
       <Sliders title="Popular" fetchUrl={reqType.reqTvPopular} />
       <Sliders title="Top Rated" fetchUrl={reqType.reqTvTopRated} />
       <Sliders title="On Air" fetchUrl={reqType.reqTvOnAir} />
