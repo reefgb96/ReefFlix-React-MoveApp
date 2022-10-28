@@ -1,0 +1,36 @@
+.navigation-bar {
+  background-color: #0f0f0f;
+}
+
+.site-title .navbar-logo {
+  color: #e50914;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2vw;
+}
+
+.links .nav-links .navbar-item {
+  font-size: 1vw;
+  list-style-type: none;
+  list-style: none;
+  text-decoration: none;
+  cursor: pointer;
+  color: #fff;
+  border-bottom: 2px solid transparent;
+  transition: 0.3s ease-in-out;
+}
+.links .nav-links .navbar-item:hover {
+  border-bottom: 2px solid red;
+}
+
+.search-input {
+  background-color: transparent;
+  color: #fff;
+  border-radius: 50px;
+  border: 2px solid #fff;
+  outline: none;
+}
+
+.navbar-item {
+  font-size: small;
+}/*# sourceMappingURL=navbar.css.map */

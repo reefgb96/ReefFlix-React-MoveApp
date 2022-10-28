@@ -1,0 +1,70 @@
+.login-wrapper {
+  min-height: 94vh;
+}
+
+.login-bg {
+  background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/79fe83d4-7ef6-4181-9439-46db72599559/be788ce5-47b0-4942-abb1-2108bcdfb71d/IL-he-20221017-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+  opacity: 0.6;
+  min-height: 90vh;
+  max-height: 100vh;
+  min-width: 90vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.login-card-wrapper {
+  min-height: 70vh;
+  max-height: 80vh;
+  min-width: 22vw;
+  max-width: 30vw;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.login-title {
+  font-size: 2vw;
+}
+
+.login-card-body {
+  min-height: 100%;
+  min-width: 100%;
+  //   background-color: aquamarine;
+}
+
+.login-title {
+  min-height: 15%;
+  max-height: 40%;
+  min-width: 80%;
+  max-width: 100%;
+  //   background-color: red;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.login-inputs {
+  //   background-color: chocolate;
+  min-height: 35%;
+  max-height: 40%;
+  min-width: 80%;
+  max-width: 100%;
+  position: absolute;
+  top: 50;
+  left: 0;
+  bottom: 50;
+  right: 0;
+}
+
+#login-email-id,
+#login-pass-id {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 15px;
+  min-height: 2.8rem;
+  max-height: 3rem;
+  min-width: 20rem;
+  max-width: 30rem;
+}

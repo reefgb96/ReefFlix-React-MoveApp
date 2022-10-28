@@ -1,0 +1,21 @@
+.showcase-div {
+  min-width: 100%;
+  min-height: 700px;
+  max-height: 700px;
+}
+
+.showcase-div .showcase-img {
+  min-width: 100%;
+  max-height: 700px;
+  opacity: 0.7;
+}
+
+.overlay {
+  min-height: 70%;
+}
+
+.showcase-btn-child:hover {
+  scale: 1.2;
+  background-color: #000 !important;
+  color: #fff !important;
+}

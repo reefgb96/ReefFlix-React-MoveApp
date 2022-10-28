@@ -1,0 +1,17 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+  gap: 10px;
+
+  &.card-img-top {
+    &img {
+      padding-top: 160px;
+      background-size: cover;
+      margin-bottom: 0.5rem;
+    }
+
+    &.card-title {
+      font-size: 0.8rem;
+    }
+  }
+}
